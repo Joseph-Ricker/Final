@@ -2,8 +2,8 @@
 #include <fstream>
 using namespace std;
 
-int countLine(string pname);
-int countChar(string pname);
+int countLine(char* pname);
+int countChar(char* pname);
 
 int main()
 {
@@ -26,7 +26,7 @@ int main()
 	return 0;
 }
 
-int countLine(string pname){
+int countLine(char* pname){
 	int count;
 
 	while(pname != NULL){
@@ -37,7 +37,7 @@ int countLine(string pname){
 	return count;
 }
 
-int countChar(string pname){
+int countChar(char* pname){
 	int count;
 
 	while(pname != NULL){
